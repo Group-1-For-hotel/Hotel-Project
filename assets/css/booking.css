@@ -2,7 +2,9 @@
     padding: 50px;
     text-align: center;
     background-color: #ffffff;
-    
+    /* background-image: url('/assets/image1/booking.jpg');
+    background-size: cover; */
+    background-color: antiquewhite;
 }
 
 #booking h2 {

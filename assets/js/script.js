@@ -10,9 +10,9 @@ function calculateTotal() {
     const juiceQuantity = document.getElementById('juice-quantity').value;
     const coffeeQuantity = document.getElementById('coffee-quantity').value;
     
-    const fastfoodPrice = 5; // Example price
-    const juicePrice = 3; // Example price
-    const coffeePrice = 4; // Example price
+    const fastfoodPrice = 10; // Example price
+    const juicePrice = 6; // Example price
+    const coffeePrice = 5; // Example price
     
     const totalAmount = (fastfoodQuantity * fastfoodPrice) + (juiceQuantity * juicePrice) + (coffeeQuantity * coffeePrice);
     

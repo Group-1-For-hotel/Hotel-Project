@@ -80,7 +80,7 @@ nav {
 }
 
 .hero {
-    background-image: url('background.jpg'); /* Background image URL */
+    background-image: url('/assets/image/Family-City-Mall.jpeg'); /* Background image URL */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -100,6 +100,8 @@ nav {
 .booking {
     padding: 50px;
     text-align: center;
+    background-color: #ffffff;
+    
 }
 
 .booking h2 {
@@ -127,7 +129,7 @@ nav {
     border-radius: 5px;
 }
 
-.booking input[type="submit"] {
+.booking [type="submit"] {
     width: 100%;
     padding: 10px;
     background: #333;
@@ -138,7 +140,7 @@ nav {
     font-size: 1rem;
 }
 
-.booking input[type="submit"]:hover {
+.booking button[type="submit"]:hover {
     background: #555;
 }
 

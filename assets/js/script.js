@@ -32,3 +32,32 @@ function initMap() {
 }
 
 
+
+// reservation
+
+document.querySelector('booking').addEventListener('submit',function(event){
+    event.preventDefault();
+    const name=document.querySelector('name').value
+    const email=document.querySelector('email').value
+    const checkIn=document.querySelector('checkin').value
+    const checkout=document.querySelector('checkout').value
+    const time=document.querySelector('time').value
+    const guest=document.querySelector('guests').value
+
+    document.querySelector('dis-name').innerHTML=`Name:  ${name}`
+    document.querySelector('dis-email').innerHTML=`Email: ${email}`
+    document.querySelector('dis-in-date').innerHTML=`Check-In-Date: ${checkin}`
+    document.querySelector('dis-out-date').innerHTML=`Check-Out-Date: ${checkout}`
+    document.querySelector('dis-time').innerHTML=`Time: ${time}`
+    document.querySelector('dis-guest').innerHTML=`Guest: ${guest}`
+
+
+    document.querySelector('booking').style.display=`none`
+    document.querySelector('display').style.display=`block`
+    // document.querySelector('display').style.display=`block`
+    // document.querySelector('display').style.display=`block`
+    // document.querySelector('display').style.display=`block`
+    // document.querySelector('display').style.display=`block`
+})
+
+

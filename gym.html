@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Gym</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .gym-section {
+            padding: 20px;
+            text-align: center;
+        }
+        .gym-section h2 {
+            margin-bottom: 20px;
+        }
+        .gym-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .gym-gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            const images = [
+                '',
+                'images/gym2.jpg',
+                'images/gym3.jpg',
+                'images/gym4.jpg',
+                'images/gym5.jpg',
+                'images/gym6.jpg'
+            ];
+            
+            images.forEach(function(image) {
+                $('.gym-gallery').append('<img src="' + image + '" alt="Gym Image">');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>Family City Hotel</h1>
+    </div>
+
+    <div class="gym-section">
+        <h2>Our Gym Facilities</h2>
+        <div class="gym-gallery">
+            <!-- Images will be added here by jQuery -->
+        </div>
+    </div>
+</body>
+</html>

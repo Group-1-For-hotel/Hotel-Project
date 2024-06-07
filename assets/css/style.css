@@ -21,6 +21,9 @@ nav {
 .logo {
     font-size: 2.5rem;
 }
+.main-gyi{
+    text-decoration: none;
+}
 
 .nav-links {
     list-style: none;
@@ -128,11 +131,7 @@ nav {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-<<<<<<< HEAD
     /* background-color: #555; */
-=======
-    background-color: burlywood;
->>>>>>> refs/remotes/origin/main
 }
 
 .room img {

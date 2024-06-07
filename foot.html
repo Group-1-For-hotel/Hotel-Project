@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Food Service Menu</title>
+        <link rel="stylesheet" href="./assets/css/style1.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">HotelName</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="food-service">
+                <h2>Our Food Service Menu</h2>
+                
+                <div class="menu-category">
+                    <h3>Fast Foods</h3>
+                    <div class="menu-gallery">
+                        <!-- Repeat this block for 20 fast food images -->
+                        <div class="menu-item">
+                            <img src="fastfood1.jpg" alt="Fast Food 1">
+                        </div>
+                        <!-- Add 19 more similar blocks here for fast foods -->
+                    </div>
+                </div>
+                
+                <div class="menu-category">
+                    <h3>Juices</h3>
+                    <div class="menu-gallery">
+                        <!-- Repeat this block for 20 juice images -->
+                        <div class="menu-item">
+                            <img src="juice1.jpg" alt="Juice 1">
+                        </div>
+                        <!-- Add 19 more similar blocks here for juices -->
+                    </div>
+                </div>
+                
+                <div class="menu-category">
+                    <h3>Coffees</h3>
+                    <div class="menu-gallery">
+                        <!-- Repeat this block for 20 coffee images -->
+                        <div class="menu-item">
+                            <img src="coffee1.jpg" alt="Coffee 1">
+                        </div>
+                        <!-- Add 19 more similar blocks here for coffees -->
+                    </div>
+                </div>
+            </section>
+
+            <section class="order-section">
+                <h2>Order Your Food</h2>
+                <form id="order-form">
+                    <label for="order-date">Order Date:</label>
+                    <input type="date" id="order-date" name="order-date" required>
+                    
+                    <label for="fastfood-quantity">Fast Food Quantity:</label>
+                    <input type="number" id="fastfood-quantity" name="fastfood-quantity" min="0" value="0">
+                    
+                    <label for="juice-quantity">Juice Quantity:</label>
+                    <input type="number" id="juice-quantity" name="juice-quantity" min="0" value="0">
+                    
+                    <label for="coffee-quantity">Coffee Quantity:</label>
+                    <input type="number" id="coffee-quantity" name="coffee-quantity" min="0" value="0">
+                    
+                    <label for="total-amount">Total Amount: $</label>
+                    <input type="text" id="total-amount" name="total-amount" readonly>
+                    
+                    <button type="button" onclick="calculateTotal()">Calculate Total</button>
+                    <button type="submit">Place Order</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 HotelName. All rights reserved.</p>
+        </footer>
+
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>

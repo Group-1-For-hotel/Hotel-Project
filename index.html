@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hotel Reservation</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    </head>
+    <body>
+        <nav>
+            <div class="logo">HotelName</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Welcome to Our Hotel</h1>
+                <p>Experience luxury like never before</p>
+            </div>
+        </section>
+
+        <section class="booking">
+            <h2>Book Your Stay</h2>
+            <form id="booking-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="checkin">Check-In Date:</label>
+                <input type="date" id="checkin" name="checkin" required>
+                
+                <label for="checkout">Check-Out Date:</label>
+                <input type="date" id="checkout" name="checkout" required>
+                
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" required>
+                
+                <input type="submit" value="Book Now">
+            </form>
+
+            <div class="room-headers">
+                <h3>Our Rooms</h3>
+            </div>
+
+            <div class="room-types">
+                <!-- Repeat this block for up to 20 rooms -->
+                <div class="room">
+                    <img src="single-room.jpg" alt="Single Room">
+                    <h3>Single Room</h3>
+                    <div class="sticker">Includes Two Seats and Breakfast</div>
+                </div>
+                <div class="room">
+                    <img src="double-room.jpg" alt="Double Room">
+                    <h3>Double Room</h3>
+                    <div class="sticker">Includes Two Seats and Breakfast</div>
+                </div>
+                <div class="room">
+                    <img src="a-room.jpg" alt="A Room">
+                    <h3>A Room</h3>
+                    <div class="sticker">Includes Two Seats and Breakfast</div>
+                </div>
+                <div class="room">
+                    <img src="b-room.jpg" alt="B Room">
+                    <h3>B Room</h3>
+                    <div class="sticker">Includes Two Seats and Breakfast</div>
+                </div>
+                <div class="room">
+                    <img src="c-room.jpg" alt="C Room">
+                    <h3>C Room</h3>
+                    <div class="sticker">Includes Two Seats and Breakfast</div>
+                </div>
+                <div class="room">
+                    <img src="d-room.jpg" alt="D Room">
+                    <h3>D Room</h3>
+                    <div class="sticker">Includes Two Seats and Breakfast</div>
+                </div>
+                <div class="room">
+                    <img src="e-room.jpg" alt="E Room">
+                    <h3>E Room</h3>
+                    <div class="sticker">Includes Two Seats and Breakfast</div>
+                </div>
+                <div class="room">
+                    <img src="f-room.jpg" alt="F Room">
+                    <h3>F Room</h3>
+                    <div class="sticker">Includes Two Seats and Breakfast</div>
+                </div>
+                <div class="room">
+                    <img src="g-room.jpg" alt="G Room">
+                    <h3>G Room</h3>
+                    <div class="sticker">Includes Two Seats and Breakfast</div>
+                </div>
+                <div class="room">
+                    <img src="h-room.jpg" alt="H Room">
+                    <h3>H Room</h3>
+                    <div class="sticker">Includes Two Seats and Breakfast</div>
+                </div>
+                <div class="room">
+                    <img src="i-room.jpg" alt="I Room">
+                    <h3>I Room</h3>
+                    <div class="sticker">Includes Two Seats and Breakfast</div>
+                </div>
+                <div class="room">
+                    <img src="j-room.jpg" alt="J Room">
+                    <h3>J Room</h3>
+                    <div class="sticker">Includes Two Seats and Breakfast</div>
+                </div>
+                <div class="room">
+                    <img src="k-room.jpg" alt="K Room">
+                    <h3>K Room</h3>
+                    <div class="sticker">Includes Two Seats and Breakfast</div>
+                </div>
+                <div class="room">
+                    <img src="p-room.jpg" alt="P Room">
+                    <h3>P Room</h3>
+                    <div class="sticker">Includes Two Seats and Breakfast</div>
+                </div>
+                <div class="room">
+                    <img src="s-room.jpg" alt="S Room">
+                    <h3>S Room</h3>
+                    <div class="sticker">Includes Two Seats and Breakfast</div>
+                </div>
+                <div class="room">
+                    <img src="y-room.jpg" alt="Y Room">
+                    <h3>Y Room</h3>
+                    <div class="sticker">Includes Two Seats and Breakfast</div>
+                </div>
+                <div class="room">
+                    <img src="z-room.jpg" alt="Z Room">
+                    <h3>Z Room</h3>
+                    <div class="sticker">Includes Two Seats and Breakfast</div>
+                </div>
+                <div class="room">
+                    <img src="him-room.jpg" alt="Room for Him">
+                    <h3>Room for Him</h3>
+                    <div class="sticker">Includes Two Seats and Breakfast</div>
+                </div>
+                <!-- Repeat blocks end -->
+            </div>
+        </section>
+
+        <section class="services">
+            <h2>Our Services</h2>
+            <div class="service-container">
+                <div class="service">
+                    <img src="food-room.jpg" alt="Food Room">
+                    <h3><a href="index1.html">Food Room</a></h3>
+                </div>
+                <div class="service">
+                    <img src="gym-room.jpg" alt="Gym Room">
+                    <h3><a href="/">Gym Room</a></h3>
+                </div>
+                <div class="service">
+                    <img src="pool.jpg" alt="Pool">
+                    <h3><a href="/">Pool</a></h3>
+                </div>
+                <div class="service">
+                    <img src="spa-room.jpg" alt="Spa Room">
+                    <h3><a href="/">Spa Room</a></h3>
+                </div>
+            </div>
+        </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-nav">
+        <div class="footer-content">
+            <div class="our-services">
+                <h2>Our Services</h2>
+                <!-- Add your service details here -->
+            </div>
+            <div id="map" style="height: 400px; width: 100%;"></div>
+            <div class="contact">
+                <h2>Contact Us</h2>
+                <p>Email: contact@hotel.com</p>
+                <p>Phone: +1234567890</p>
+                <p>Address: 123 Hotel St, City, Country</p>
+            </div>
+        </div>
+        <div class="footer-message">
+            <p>Made with love by Family City Hotel</p>
+        </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+    </body>
+</html>

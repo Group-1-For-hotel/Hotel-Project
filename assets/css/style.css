@@ -174,9 +174,12 @@ nav {
 }
 
 .room img {
-    width: 100%;
-    height: auto;
+    width: 200px;
+    height: 100px;
     border-radius: 5px;
+    flex-wrap: wrap;
+    display: flex;
+    position: relative;
 }
 
 .room h3 {

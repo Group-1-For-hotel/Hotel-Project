@@ -1,10 +1,6 @@
-const burger = document.querySelector('.burger');
-const nav = document.querySelector('.nav-links');
-
-burger.addEventListener('click', () => {
-    nav.classList.toggle('nav-active');
+document.querySelector('.burger').addEventListener('click', function() {
+    this.classList.toggle('toggle');
 });
-
 function calculateTotal() {
     const fastfoodQuantity = document.getElementById('fastfood-quantity').value;
     const juiceQuantity = document.getElementById('juice-quantity').value;
@@ -57,5 +53,7 @@ document.getElementById('booking-form').addEventListener('submit',function(event
     document.getElementById('display').style.border=`4px dashed grey`
     document.getElementById('display').style.padding=`20px`
 });
+
+
 
 

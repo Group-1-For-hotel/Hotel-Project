@@ -8,103 +8,72 @@ body {
     font-family: Arial, sans-serif;
 }
 
-nav {
+header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    background:cadetblue; /* semi-transparent background */
+    background: rebeccapurple; /* semi-transparent background */
     color: white;
     padding: 0 20px;
-    position: sticky;
 }
 
 .logo {
     font-size: 2.5rem;
 }
-.main-gyi{
+.logo a{
     text-decoration: none;
+    color: #ccc;
 }
-
-.nav-links {
+header .nav-links {
     list-style: none;
     display: flex;
 }
 
-.nav-links li {
+header .nav-links li {
     padding: 0 20px;
 }
 
-.nav-links a {
+header .nav-links a {
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
 }
-.burger {
+
+header .burger {
+    display: none;
     cursor: pointer;
-    display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 30px;
-    background: transparent;
-    border: none;
-    z-index: 10;
+    justify-content: space-between;
+    height: 21px;
 }
 
-.burger div {
-    width: 30px;
-    height: 4px;
-    background-color: #333;
+header .burger div {
+    width: 25px;
+    height: 3px;
+    background: white;
     border-radius: 10px;
-    transition: all 0.3s linear;
-    position: relative;
+    transition: all 0.3s ease;
 }
-
-.burger .line1 {
-    transform: rotate(0) translate(0, 0);
-}
-
-.burger .line2 {
-    opacity: 1;
-    transform: translate(0, 0);
-}
-
-.burger .line3 {
-    transform: rotate(0) translate(0, 0);
-}
-
-.burger.toggle .line1 {
-    transform: rotate(45deg) translate(5px, 5px);
-}
-
-.burger.toggle .line2 {
-    opacity: 0;
-}
-
-.burger.toggle .line3 {
-    transform: rotate(-45deg) translate(5px, -5px);
-}
-
 
 @media screen and (max-width: 768px) {
-    .nav-links {
+    header .nav-links {
         display: none;
         flex-direction: column;
         width: 100%;
         position: absolute;
         top: 80px;
         left: 0;
-        background: #333;
+        background: black;
     }
 
-    .nav-links li {
+    header .nav-links li {
         text-align: center;
         padding: 20px;
         width: 100%;
     }
 
-    .burger {
+    header .burger {
         display: flex;
     }
 }

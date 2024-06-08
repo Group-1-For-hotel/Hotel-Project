@@ -65,7 +65,6 @@
             color: white;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
             width: 100%;
             bottom: 0;
         }
@@ -78,12 +77,12 @@
 
         <nav>
             <ul id="index">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#introduction">Introduction</a></li>
                 <li><a href="#data-collection">Data Collection</a></li>
                 <li><a href="#data-use">Data Use</a></li>
                 <li><a href="#data-sharing">Data Sharing</a></li>
                 <li><a href="#user-rights">User Rights</a></li>
-                <li><a href="#contact">Contact Information</a></li>
             </ul>
         </nav>
 
@@ -112,25 +111,8 @@
             <p>You have the right to access, correct, or delete your personal information. Contact us for any privacy concerns.</p>
         </section>
 
-        <section id="contact">
-            <h2>Contact Information</h2>
-            <p>If you have any questions or concerns about our privacy policy, please contact us at support@familycityhotel.com.</p>
-        </section>
-
         <footer>
             <p>Made with love by Family City Hotel</p>
         </footer>
-
-        <script>
-            $(document).ready(function(){
-                $('nav ul li a').on('click', function(event) {
-                    event.preventDefault();
-                    var target = $(this).attr('href');
-                    $('html, body').animate({
-                        scrollTop: $(target).offset().top
-                    }, 1000);
-                });
-            });
-        </script>
     </body>
 </html>

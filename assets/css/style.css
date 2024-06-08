@@ -235,9 +235,6 @@ footer {
 .our-services, .contact {
     margin-bottom: 20px;
 }
-iframe{
-    /* width: 100%; */
-}
 
 .footer-message {
     background-color:cadetblue; /* Matching the navigation bar background */

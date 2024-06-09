@@ -149,6 +149,22 @@ header .burger div {
     transform: scale(1.2);
 }
 
+.if img:hover {
+    transform: scale(1.3);
+}
+
+.fa img:hover {
+    transform: scale(1.3);
+}
+
+.mi img:hover {
+    transform: scale(1.3);
+}
+
+.ly img:hover {
+    transform: scale(1.3);
+}
+
 .room-headers {
     display: flex;
     justify-content: space-around;

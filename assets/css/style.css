@@ -138,7 +138,7 @@ header .burger div {
 }
 
 .h img:hover {
-    transform: scale3d(1.2);
+    transform: scale(1.2);
 }
 
 .i img:hover {

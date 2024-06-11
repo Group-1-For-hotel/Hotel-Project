@@ -1,14 +1,20 @@
-document.querySelector('.burger').addEventListener('click', function() {
-    this.classList.toggle('toggle');
+document.addEventListener('DOMContentLoaded', () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+        burger.classList.toggle('toggle');
+    });
 });
 function calculateTotal() {
     const fastfoodQuantity = document.getElementById('fastfood-quantity').value;
     const juiceQuantity = document.getElementById('juice-quantity').value;
     const coffeeQuantity = document.getElementById('coffee-quantity').value;
     
-    const fastfoodPrice = 30; // Example price
-    const juicePrice = 16; // Example price
-    const coffeePrice = 15; // Example price
+    const fastfoodPrice = 7; // Example price
+    const juicePrice = 6; // Example price
+    const coffeePrice = 6; // Example price
     
     const totalAmount = (fastfoodQuantity * fastfoodPrice) + (juiceQuantity * juicePrice) + (coffeeQuantity * coffeePrice);
     

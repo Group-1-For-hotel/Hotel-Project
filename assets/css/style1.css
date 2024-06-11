@@ -4,9 +4,11 @@
     box-sizing: border-box;
 }
 
+/* Add this CSS to your style1.css file */
 body {
     font-family: Arial, sans-serif;
-    background-color: peru;
+    margin: 0;
+    padding: 0;
 }
 
 header nav {
@@ -56,6 +58,44 @@ header .burger div {
     border-radius: 10px;
     transition: all 0.3s ease;
 }
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #333;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .nav-links.nav-active {
+        display: flex;
+    }
+
+    .burger.toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .burger.toggle .line2 {
+        opacity: 0;
+    }
+
+    .burger.toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     header .nav-links {
